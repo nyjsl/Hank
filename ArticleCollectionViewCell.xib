@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="ArticleCollectionViewCell" customModule="Gank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="199" height="291"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="199" height="291"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YpB-PT-CG8">
+                        <rect key="frame" x="0.0" y="0.0" width="199" height="291"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fM-yp-FTK">
+                                <rect key="frame" x="0.0" y="199" width="199" height="92"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="879-vA-dHs">
+                                        <rect key="frame" x="4" y="4" width="191" height="84"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="879-vA-dHs" secondAttribute="bottom" constant="4" id="9aO-KE-g8B"/>
+                                    <constraint firstAttribute="trailing" secondItem="879-vA-dHs" secondAttribute="trailing" constant="4" id="FGH-EZ-hrp"/>
+                                    <constraint firstItem="879-vA-dHs" firstAttribute="leading" secondItem="3fM-yp-FTK" secondAttribute="leading" constant="4" id="evy-me-Rwd"/>
+                                    <constraint firstItem="879-vA-dHs" firstAttribute="top" secondItem="3fM-yp-FTK" secondAttribute="top" constant="4" id="hqO-4g-dHv"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hxw-lu-pGs">
+                                <rect key="frame" x="0.0" y="0.0" width="199" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Hxw-lu-pGs" secondAttribute="height" multiplier="1:1" id="lbq-mO-Pet"/>
+                                    <constraint firstAttribute="width" secondItem="Hxw-lu-pGs" secondAttribute="height" id="o0J-FB-7OD"/>
+                                    <constraint firstAttribute="height" constant="199" id="sR2-J0-9dJ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="o0J-FB-7OD"/>
+                                        <exclude reference="sR2-J0-9dJ"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Hxw-lu-pGs" secondAttribute="trailing" id="2eg-U7-eWS"/>
+                            <constraint firstAttribute="bottom" secondItem="3fM-yp-FTK" secondAttribute="bottom" id="3Ht-lL-fSM"/>
+                            <constraint firstItem="3fM-yp-FTK" firstAttribute="top" secondItem="Hxw-lu-pGs" secondAttribute="bottom" id="3ra-Qe-pJ8"/>
+                            <constraint firstItem="Hxw-lu-pGs" firstAttribute="top" secondItem="YpB-PT-CG8" secondAttribute="top" id="6jg-XB-J4O"/>
+                            <constraint firstAttribute="bottom" secondItem="Hxw-lu-pGs" secondAttribute="bottom" constant="92" id="E5H-9n-HpA"/>
+                            <constraint firstItem="Hxw-lu-pGs" firstAttribute="leading" secondItem="YpB-PT-CG8" secondAttribute="leading" id="EBI-fS-ctU"/>
+                            <constraint firstItem="3fM-yp-FTK" firstAttribute="leading" secondItem="YpB-PT-CG8" secondAttribute="leading" id="JNr-II-9By"/>
+                            <constraint firstItem="Hxw-lu-pGs" firstAttribute="width" secondItem="YpB-PT-CG8" secondAttribute="height" multiplier="199:291" id="Mrx-JR-gaN"/>
+                            <constraint firstAttribute="trailing" secondItem="Hxw-lu-pGs" secondAttribute="trailing" id="PuV-jz-bSy"/>
+                            <constraint firstItem="Hxw-lu-pGs" firstAttribute="leading" secondItem="YpB-PT-CG8" secondAttribute="leading" id="SLT-Jb-jfr"/>
+                            <constraint firstItem="Hxw-lu-pGs" firstAttribute="width" secondItem="YpB-PT-CG8" secondAttribute="width" id="Tnk-Gx-B9w"/>
+                            <constraint firstItem="Hxw-lu-pGs" firstAttribute="width" secondItem="YpB-PT-CG8" secondAttribute="height" multiplier="199:291" id="YE2-9v-dfH"/>
+                            <constraint firstAttribute="trailing" secondItem="3fM-yp-FTK" secondAttribute="trailing" id="e15-Os-v1u"/>
+                            <constraint firstItem="Hxw-lu-pGs" firstAttribute="top" secondItem="YpB-PT-CG8" secondAttribute="top" id="idP-yg-s4a"/>
+                            <constraint firstItem="Hxw-lu-pGs" firstAttribute="width" secondItem="YpB-PT-CG8" secondAttribute="height" multiplier="199:291" id="zf5-FW-uim"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2eg-U7-eWS"/>
+                                <exclude reference="E5H-9n-HpA"/>
+                                <exclude reference="EBI-fS-ctU"/>
+                                <exclude reference="Mrx-JR-gaN"/>
+                                <exclude reference="Tnk-Gx-B9w"/>
+                                <exclude reference="YE2-9v-dfH"/>
+                                <exclude reference="idP-yg-s4a"/>
+                                <exclude reference="zf5-FW-uim"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YpB-PT-CG8" secondAttribute="bottom" id="Hka-PF-ZLa"/>
+                <constraint firstItem="YpB-PT-CG8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Vmp-6A-CTl"/>
+                <constraint firstAttribute="trailing" secondItem="YpB-PT-CG8" secondAttribute="trailing" id="tLQ-ua-ywV"/>
+                <constraint firstItem="YpB-PT-CG8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vCm-hM-w5X"/>
+            </constraints>
+            <connections>
+                <outlet property="contentAnchorView" destination="YpB-PT-CG8" id="FII-yh-fCH"/>
+                <outlet property="girlDescriptionLabel" destination="879-vA-dHs" id="wvL-u5-XxI"/>
+                <outlet property="girlImageView" destination="Hxw-lu-pGs" id="QxX-Tn-cb0"/>
+            </connections>
+            <point key="canvasLocation" x="135.5" y="340.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
