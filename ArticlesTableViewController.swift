@@ -83,8 +83,7 @@ class ArticlesTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! DayArticlesTableViewCell
         
-        let category = dayArticlesModel.dayArticlesEntity?.category![indexPath.section]
-        let articleEntity = dayArticlesModel.dayArticlesEntity?.results![category!]![indexPath.row]
+        let articleEntity = getArticleEntityByIndexpath(indexPath)
         let desc = articleEntity!.desc ?? "未知"
         let who = articleEntity!.who ?? "佚名"
         cell.descLabel.text = desc
@@ -94,6 +93,19 @@ class ArticlesTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
          return dayArticlesModel.dayArticlesEntity?.category![section] ?? "未知"
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if let articleEntity = getArticleEntityByIndexpath(indexPath){
+        AppDelegate.getNavigationController().pushViewController(WebViewController.buildViewController(articleEntity), animated: true)
+        }
+        
+    }
+    
+    func getArticleEntityByIndexpath(indexPath:NSIndexPath) -> ArticleEntity?{
+        let category = dayArticlesModel.dayArticlesEntity?.category![indexPath.section]
+        let articleEntity = dayArticlesModel.dayArticlesEntity?.results![category!]![indexPath.row]
+        return articleEntity
     }
  
 

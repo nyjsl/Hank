@@ -14,6 +14,12 @@
 		260BB02C1D367FCA006AA7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260BB02B1D367FCA006AA7EB /* Assets.xcassets */; };
 		260BB02F1D367FCA006AA7EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 260BB02D1D367FCA006AA7EB /* LaunchScreen.storyboard */; };
 		260BB0391D368080006AA7EB /* AppIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 260BB0381D368080006AA7EB /* AppIcon@2x.png */; };
+		2684B0651D445BA300EDF8DB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2684B0641D445BA300EDF8DB /* WebViewController.swift */; };
+		2684B0691D44884D00EDF8DB /* AboutNoImgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2684B0681D44884D00EDF8DB /* AboutNoImgCell.swift */; };
+		2684B06D1D448F8A00EDF8DB /* RoundCornerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2684B06C1D448F8A00EDF8DB /* RoundCornerUtils.swift */; };
+		2684B06F1D44AEAC00EDF8DB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2684B06E1D44AEAC00EDF8DB /* CardView.swift */; };
+		2684B0711D44B77F00EDF8DB /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2684B0701D44B77F00EDF8DB /* CircleImageView.swift */; };
+		2684B0731D44BFF700EDF8DB /* AboutImgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2684B0721D44BFF700EDF8DB /* AboutImgCell.swift */; };
 		268F12251D3BB60700A3FCF6 /* ArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268F12231D3BB60700A3FCF6 /* ArticleCollectionViewCell.swift */; };
 		26948B511D39CA6D00D7F8A2 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26948B501D39CA6D00D7F8A2 /* menu@2x.png */; };
 		26948B531D39CA7900D7F8A2 /* menu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26948B521D39CA7900D7F8A2 /* menu@3x.png */; };
@@ -51,6 +57,12 @@
 		260BB02E1D367FCA006AA7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		260BB0301D367FCA006AA7EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		260BB0381D368080006AA7EB /* AppIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon@2x.png"; sourceTree = "<group>"; };
+		2684B0641D445BA300EDF8DB /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = ../WebViewController.swift; sourceTree = "<group>"; };
+		2684B0681D44884D00EDF8DB /* AboutNoImgCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutNoImgCell.swift; sourceTree = "<group>"; };
+		2684B06C1D448F8A00EDF8DB /* RoundCornerUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCornerUtils.swift; sourceTree = "<group>"; };
+		2684B06E1D44AEAC00EDF8DB /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		2684B0701D44B77F00EDF8DB /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		2684B0721D44BFF700EDF8DB /* AboutImgCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutImgCell.swift; sourceTree = "<group>"; };
 		268F12231D3BB60700A3FCF6 /* ArticleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCollectionViewCell.swift; sourceTree = "<group>"; };
 		26948B501D39CA6D00D7F8A2 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		26948B521D39CA7900D7F8A2 /* menu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@3x.png"; sourceTree = "<group>"; };
@@ -131,6 +143,7 @@
 		260BB0231D367FCA006AA7EB /* Gank */ = {
 			isa = PBXGroup;
 			children = (
+				2684B0641D445BA300EDF8DB /* WebViewController.swift */,
 				260BB0241D367FCA006AA7EB /* AppDelegate.swift */,
 				260BB0261D367FCA006AA7EB /* ViewController.swift */,
 				260BB0281D367FCA006AA7EB /* Main.storyboard */,
@@ -178,6 +191,10 @@
 			isa = PBXGroup;
 			children = (
 				26948B6C1D39E34E00D7F8A2 /* AboutViewController.swift */,
+				2684B0681D44884D00EDF8DB /* AboutNoImgCell.swift */,
+				2684B06E1D44AEAC00EDF8DB /* CardView.swift */,
+				2684B0701D44B77F00EDF8DB /* CircleImageView.swift */,
+				2684B0721D44BFF700EDF8DB /* AboutImgCell.swift */,
 			);
 			name = About;
 			sourceTree = "<group>";
@@ -199,6 +216,7 @@
 				26948B6E1D3A1C9B00D7F8A2 /* ThemeUtils.swift */,
 				26980B4C1D3B6ECD0012C022 /* MyDateFormatTransform.swift */,
 				26980B501D3B7DEA0012C022 /* DateUtils.swift */,
+				2684B06C1D448F8A00EDF8DB /* RoundCornerUtils.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -368,12 +386,16 @@
 				26980B451D3B2D8A0012C022 /* GankIOApi.swift in Sources */,
 				269F1B061D3E6BBB00E3987F /* ArticlesTableViewController.swift in Sources */,
 				26948B661D39D68100D7F8A2 /* MainTabViewController.swift in Sources */,
+				2684B0691D44884D00EDF8DB /* AboutNoImgCell.swift in Sources */,
+				2684B0651D445BA300EDF8DB /* WebViewController.swift in Sources */,
 				26948B6B1D39E32600D7F8A2 /* SortViewController.swift in Sources */,
 				26998E9F1D4314E4009AE2CC /* DayArticlesTableViewCell.swift in Sources */,
+				2684B0711D44B77F00EDF8DB /* CircleImageView.swift in Sources */,
 				26980B471D3B3A5D0012C022 /* BaseModel.swift in Sources */,
 				268F12251D3BB60700A3FCF6 /* ArticleCollectionViewCell.swift in Sources */,
 				26948B6D1D39E34E00D7F8A2 /* AboutViewController.swift in Sources */,
 				26980B4D1D3B6ECD0012C022 /* MyDateFormatTransform.swift in Sources */,
+				2684B06D1D448F8A00EDF8DB /* RoundCornerUtils.swift in Sources */,
 				26980B511D3B7DEA0012C022 /* DateUtils.swift in Sources */,
 				26980B4F1D3B72E90012C022 /* RecentArticlesModel.swift in Sources */,
 				26980B491D3B693E0012C022 /* BaseEntity.swift in Sources */,
@@ -381,8 +403,10 @@
 				26948B691D39DA9E00D7F8A2 /* ControllerUtils.swift in Sources */,
 				260BB0271D367FCA006AA7EB /* ViewController.swift in Sources */,
 				260BB0251D367FCA006AA7EB /* AppDelegate.swift in Sources */,
+				2684B0731D44BFF700EDF8DB /* AboutImgCell.swift in Sources */,
 				26E954CC1D3FC197003FB21D /* DayArticlesEntity.swift in Sources */,
 				26E954CE1D3FC51D003FB21D /* DayActiclesModel.swift in Sources */,
+				2684B06F1D44AEAC00EDF8DB /* CardView.swift in Sources */,
 				26948B6F1D3A1C9B00D7F8A2 /* ThemeUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,6 +23,8 @@ class ControllerUtils{
         
         static let VCNameArticlesTableView = "Articles"
         
+        static  let VCNameWebView = "WebView"
+        
     }
     
     static func loadViewControllerWithName(vcName: String ,sbName: String = Identifiers.DEFAULT_SB_NAME) ->  UIViewController{

@@ -141,13 +141,14 @@ class RecentViewController: UIViewController ,UICollectionViewDelegate,UICollect
         cell.contentAnchorView.layer.masksToBounds = true
         
         //在self.layer上设置阴影
-        cell.layer.cornerRadius = 3;
-        cell.layer.shadowColor = UIColor.darkGrayColor().CGColor;
-        cell.layer.masksToBounds = false;
-        cell.layer.shadowOffset = CGSizeMake(1, 1.5);
-        cell.layer.shadowRadius = 2;
-        cell.layer.shadowOpacity = 0.75;
-        cell.layer.shadowPath = UIBezierPath.init(roundedRect: cell.layer.bounds, cornerRadius: 3).CGPath
+        RoundCornerUtils.drawRoundCornerToLayer(cell.layer)
+//        cell.layer.cornerRadius = 3;
+//        cell.layer.shadowColor = UIColor.darkGrayColor().CGColor;
+//        cell.layer.masksToBounds = false;
+//        cell.layer.shadowOffset = CGSizeMake(1, 1.5);
+//        cell.layer.shadowRadius = 2;
+//        cell.layer.shadowOpacity = 0.75;
+//        cell.layer.shadowPath = UIBezierPath.init(roundedRect: cell.layer.bounds, cornerRadius: 3).CGPath
         
         return cell
     }
@@ -181,17 +182,11 @@ class RecentViewController: UIViewController ,UICollectionViewDelegate,UICollect
             let article = recentArticleModel.articleEntities[item]
             if let url = article.url{
                 
-                let idmPhoto = IDMPhoto(URL: NSURL(string: article.url!)!)
+                let idmPhoto = IDMPhoto(URL: NSURL(string: url)!)
                 idmPhoto.caption = article.desc
                 let photoBrowser = IDMPhotoBrowser.init(photos: [idmPhoto], animatedFromView: sender.view)
-
                 photoBrowser.usePopAnimation = true
-                photoBrowser.displayDoneButton = false
-                let photoBroswer = IDMPhotoBrowser(photoURLs: [NSURL.init(string: url)!], animatedFromView: view)
-                
-                photoBroswer.usePopAnimation = true
-                
-                self.presentViewController(photoBroswer, animated: true, completion: nil)
+                self.presentViewController(photoBrowser, animated: true, completion: nil)
             }
 
         }

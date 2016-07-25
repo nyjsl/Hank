@@ -41,10 +41,13 @@ public class DateUtils{
         
         let dateYesterdayYesterDayYesterDay = calender.dateByAddingUnit(.Day, value: -1, toDate: dateYesterdayYesterDay!, options: .MatchStrictly)
         
+        let yyyyDay = calender.dateByAddingUnit(.Day, value: -1, toDate: dateYesterdayYesterDayYesterDay!, options: .MatchStrictly)
+        
         return [
             getYMDTypleFromDate(dateYesterday!)
             ,getYMDTypleFromDate(dateYesterdayYesterDay!)
             ,getYMDTypleFromDate(dateYesterdayYesterDayYesterDay!)
+            ,getYMDTypleFromDate(yyyyDay!)
         ]
     }
     

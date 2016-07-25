@@ -17,6 +17,11 @@ PODS:
   - Moya/RxSwift (7.0.0):
     - Moya/Core
     - RxSwift (~> 2.0)
+  - NJKWebViewProgress (0.2.3):
+    - NJKWebViewProgress/Core (= 0.2.3)
+    - NJKWebViewProgress/ProgressView (= 0.2.3)
+  - NJKWebViewProgress/Core (0.2.3)
+  - NJKWebViewProgress/ProgressView (0.2.3)
   - ObjectMapper (1.3.0)
   - PageMenu (1.2.9)
   - pop (1.0.9)
@@ -35,6 +40,7 @@ DEPENDENCIES:
   - MJRefresh
   - Moya
   - Moya/RxSwift
+  - NJKWebViewProgress
   - ObjectMapper (~> 1.3)
   - PageMenu
   - RxCocoa (~> 2.0)
@@ -48,6 +54,7 @@ SPEC CHECKSUMS:
   IDMPhotoBrowser: b574fe3229754e701f32df271afbc4ac7e4e1997
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   Moya: f004b82418fb8165ee1fc9f86190db4b3611fda9
+  NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   ObjectMapper: 4eb08a726e9791a93b2632049951b56a7c17e471
   PageMenu: ba19ff267f7a19e444e93c20a7847b78954a7011
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
@@ -56,6 +63,6 @@ SPEC CHECKSUMS:
   RxSwift: 77f3a0b15324baa7a1c9bfa9f199648a82424e26
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
 
-PODFILE CHECKSUM: b94ba1224f898879bd254211e5c27e1df6effdd5
+PODFILE CHECKSUM: 3a444d32772ed031bcffcde51a80bf26f000f949
 
 COCOAPODS: 1.0.1
