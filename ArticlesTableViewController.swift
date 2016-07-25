@@ -45,6 +45,7 @@ class ArticlesTableViewController: UITableViewController {
             self.tableView.reloadData()
             self.tableView.mj_header.endRefreshing()
             }, onError: { (error) in
+                ToastUtils.makeToast(self.view)
                 print(error)
             }, onCompleted: {
                 self.tableView.mj_header.endRefreshing()

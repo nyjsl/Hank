@@ -32,23 +32,21 @@ public class DateUtils{
     }
     
     public static func getYMDTupleArray() ->[(String,String,String)]{
+        
+        var date = NSDate()
+        
+        var ymdTuples:[(String,String,String)] = []
+        for _ in 0...4{
+            date = getDateYesterday(date)
+            ymdTuples += [getYMDTypleFromDate(date)]
+            
+        }
+        return ymdTuples
+    }
+    
+    private static func getDateYesterday(date: NSDate) -> NSDate{
         let calender = NSCalendar.currentCalendar()
-        let dateNow = NSDate()
-        
-        let dateYesterday = calender.dateByAddingUnit(.Day, value: -1, toDate: dateNow, options: .MatchStrictly)
-        
-        let dateYesterdayYesterDay = calender.dateByAddingUnit(.Day, value: -1, toDate: dateYesterday!, options: .MatchStrictly)
-        
-        let dateYesterdayYesterDayYesterDay = calender.dateByAddingUnit(.Day, value: -1, toDate: dateYesterdayYesterDay!, options: .MatchStrictly)
-        
-        let yyyyDay = calender.dateByAddingUnit(.Day, value: -1, toDate: dateYesterdayYesterDayYesterDay!, options: .MatchStrictly)
-        
-        return [
-            getYMDTypleFromDate(dateYesterday!)
-            ,getYMDTypleFromDate(dateYesterdayYesterDay!)
-            ,getYMDTypleFromDate(dateYesterdayYesterDayYesterDay!)
-            ,getYMDTypleFromDate(yyyyDay!)
-        ]
+        return calender.dateByAddingUnit(.Day, value: -1, toDate: date, options: .MatchStrictly)!
     }
     
     private static func getYMDTypleFromDate(date: NSDate) -> (String,String,String){

@@ -103,7 +103,7 @@ class AboutViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     struct Details {
         static let DetailIntroduce = "这是一个奇怪的客户端\n\n数据内容来源于代码家的http://gank.io\n\n界面盗用模仿了好几个Gank.IO的客户端，有Android的也有IOS的，会感觉不伦不类\n\n用了不少的开源项目\n\n做的很粗糙，没有加错误界面～～"
         static let DetailDevelopers = "nyjsl"
-        static let DetailLibs = "Alamofire\nCHTCollectionViewWaterfallLayout\nMoya\nRxSwift\nObjectMapper\nSDWebImage\nMJRefresh\nPageMenu\nIDMPhotoBrowser\nNJKWebViewProgress"
+        static let DetailLibs = "Alamofire\nCHTCollectionViewWaterfallLayout\nMoya\nRxSwift\nObjectMapper\nSDWebImage\nMJRefresh\nPageMenu\nIDMPhotoBrowser\nNJKWebViewProgress\nToast-Swift"
 
         
     }

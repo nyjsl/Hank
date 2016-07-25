@@ -14,5 +14,6 @@ target 'Gank' do
     pod 'MJRefresh'
     pod 'PageMenu'
     pod 'IDMPhotoBrowser'
-    pod 'NJKWebViewProgress'	
+    pod 'NJKWebViewProgress'
+    pod 'Toast-Swift', '~> 1.3.0'	
 end

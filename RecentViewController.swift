@@ -88,7 +88,8 @@ class RecentViewController: UIViewController ,UICollectionViewDelegate,UICollect
                 }
                 self.articleCollectionView.reloadData()
                 }, onError: { (error) in
-                print(error)
+                    print(error)
+                    ToastUtils.makeToast(self.view)
                     self.articleCollectionView.mj_footer.endRefreshing()
                 }, onCompleted: { 
                     print("onCompleted")
