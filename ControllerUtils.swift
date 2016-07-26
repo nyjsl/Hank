@@ -16,13 +16,15 @@ class ControllerUtils{
     }
     
     struct VCName{
+        
         static let VCNameMainTabBar = "MainTabBar";
+        
         static let VCNameRecent = "Recent"
         static let VCNameSort = "Sort"
         static let VCNameAbout = "About"
+        static let VCNameVideos = "Videos"
         
         static let VCNameArticlesTableView = "Articles"
-        
         static  let VCNameWebView = "WebView"
         
     }

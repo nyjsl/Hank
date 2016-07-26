@@ -26,6 +26,26 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="-743"/>
         </scene>
+        <!--视频-->
+        <scene sceneID="cjW-2j-t6K">
+            <objects>
+                <viewController storyboardIdentifier="Videos" id="ATF-2U-I0a" customClass="VideosViewController" customModule="Gank" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lbQ-tf-tGW"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ix-7r-6i4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1gi-92-uRK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="视频" image="videos.png" id="a5z-yG-MM0"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="etS-QC-jF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-622" y="176"/>
+        </scene>
         <!--关于-->
         <scene sceneID="naN-3E-9qs">
             <objects>
@@ -46,7 +66,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EpM-ky-8jS" id="tbF-I2-bge">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="71.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OKG-zs-2eI" customClass="CardView" customModule="Gank" customModuleProvider="target">
@@ -108,7 +128,7 @@
                                         <rect key="frame" x="0.0" y="100" width="600" height="102"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EbR-L3-glo" id="7Mf-YD-yVg">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="102"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="101.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SVs-ZB-FTP" customClass="CardView" customModule="Gank" customModuleProvider="target">
@@ -197,7 +217,7 @@
                                         <rect key="frame" x="0.0" y="202" width="600" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V6u-Oi-QAL" id="Xx5-m5-wXa">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="149.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AboutMainImg" translatesAutoresizingMaskIntoConstraints="NO" id="tVo-6Z-bbI">
@@ -437,6 +457,7 @@
                         <segue destination="0Zx-hE-Bwf" kind="relationship" relationship="viewControllers" id="jna-Zu-JJP"/>
                         <segue destination="W9O-1W-H1S" kind="relationship" relationship="viewControllers" id="gp3-mx-r23"/>
                         <segue destination="wlj-sx-MgK" kind="relationship" relationship="viewControllers" id="ct8-7U-QMn"/>
+                        <segue destination="ATF-2U-I0a" kind="relationship" relationship="viewControllers" id="Fhb-BR-5Y5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nt3-rm-Niq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -450,5 +471,6 @@
         <image name="about.png" width="25" height="25"/>
         <image name="menu.png" width="25" height="25"/>
         <image name="time.png" width="25" height="25"/>
+        <image name="videos.png" width="24" height="24"/>
     </resources>
 </document>

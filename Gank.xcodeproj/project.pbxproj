@@ -42,6 +42,10 @@
 		26980B4D1D3B6ECD0012C022 /* MyDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26980B4C1D3B6ECD0012C022 /* MyDateFormatTransform.swift */; };
 		26980B4F1D3B72E90012C022 /* RecentArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26980B4E1D3B72E90012C022 /* RecentArticlesModel.swift */; };
 		26980B511D3B7DEA0012C022 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26980B501D3B7DEA0012C022 /* DateUtils.swift */; };
+		269862D31D47910B00F0156F /* videos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 269862D11D47910B00F0156F /* videos@2x.png */; };
+		269862D41D47910B00F0156F /* videos@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 269862D21D47910B00F0156F /* videos@3x.png */; };
+		269862D71D4791F500F0156F /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269862D61D4791F500F0156F /* VideosViewController.swift */; };
+		269862D91D4796DB00F0156F /* MeiPaiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269862D81D4796DB00F0156F /* MeiPaiApi.swift */; };
 		26998E9F1D4314E4009AE2CC /* DayArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26998E9E1D4314E4009AE2CC /* DayArticlesTableViewCell.swift */; };
 		26998EA11D432101009AE2CC /* ArticleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26998EA01D432101009AE2CC /* ArticleCollectionViewCell.xib */; };
 		269F1B061D3E6BBB00E3987F /* ArticlesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269F1B051D3E6BBB00E3987F /* ArticlesTableViewController.swift */; };
@@ -86,6 +90,10 @@
 		26980B4C1D3B6ECD0012C022 /* MyDateFormatTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDateFormatTransform.swift; sourceTree = "<group>"; };
 		26980B4E1D3B72E90012C022 /* RecentArticlesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentArticlesModel.swift; sourceTree = "<group>"; };
 		26980B501D3B7DEA0012C022 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		269862D11D47910B00F0156F /* videos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videos@2x.png"; sourceTree = "<group>"; };
+		269862D21D47910B00F0156F /* videos@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videos@3x.png"; sourceTree = "<group>"; };
+		269862D61D4791F500F0156F /* VideosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
+		269862D81D4796DB00F0156F /* MeiPaiApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeiPaiApi.swift; sourceTree = "<group>"; };
 		26998E9E1D4314E4009AE2CC /* DayArticlesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayArticlesTableViewCell.swift; sourceTree = "<group>"; };
 		26998EA01D432101009AE2CC /* ArticleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCollectionViewCell.xib; sourceTree = "<group>"; };
 		269F1B051D3E6BBB00E3987F /* ArticlesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +128,7 @@
 		260BB0181D367FCA006AA7EB = {
 			isa = PBXGroup;
 			children = (
+				269862D51D4791D200F0156F /* videos */,
 				26980B421D3B2D580012C022 /* api */,
 				26948B671D39DA8300D7F8A2 /* Utils */,
 				26948B651D39D68100D7F8A2 /* MainTabViewController.swift */,
@@ -167,6 +176,8 @@
 		260BB0371D368049006AA7EB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				269862D11D47910B00F0156F /* videos@2x.png */,
+				269862D21D47910B00F0156F /* videos@3x.png */,
 				26948B5C1D39CA9D00D7F8A2 /* SplashTitle@2x.png */,
 				26948B5A1D39CA9600D7F8A2 /* about@3x.png */,
 				26948B581D39CA9000D7F8A2 /* about@2x.png */,
@@ -227,10 +238,8 @@
 		26980B421D3B2D580012C022 /* api */ = {
 			isa = PBXGroup;
 			children = (
-				26980B431D3B2D630012C022 /* model */,
-				26980B441D3B2D8A0012C022 /* GankIOApi.swift */,
-				26980B461D3B3A5D0012C022 /* BaseModel.swift */,
-				26980B481D3B693E0012C022 /* BaseEntity.swift */,
+				269862DB1D479FD800F0156F /* meipai */,
+				269862DA1D479FB600F0156F /* gank */,
 			);
 			name = api;
 			sourceTree = "<group>";
@@ -244,6 +253,33 @@
 				26E954CD1D3FC51D003FB21D /* DayActiclesModel.swift */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		269862D51D4791D200F0156F /* videos */ = {
+			isa = PBXGroup;
+			children = (
+				269862D61D4791F500F0156F /* VideosViewController.swift */,
+			);
+			name = videos;
+			sourceTree = "<group>";
+		};
+		269862DA1D479FB600F0156F /* gank */ = {
+			isa = PBXGroup;
+			children = (
+				26980B481D3B693E0012C022 /* BaseEntity.swift */,
+				26980B461D3B3A5D0012C022 /* BaseModel.swift */,
+				26980B441D3B2D8A0012C022 /* GankIOApi.swift */,
+				26980B431D3B2D630012C022 /* model */,
+			);
+			name = gank;
+			sourceTree = "<group>";
+		};
+		269862DB1D479FD800F0156F /* meipai */ = {
+			isa = PBXGroup;
+			children = (
+				269862D81D4796DB00F0156F /* MeiPaiApi.swift */,
+			);
+			name = meipai;
 			sourceTree = "<group>";
 		};
 		70B022568185DB622DC7CA25 /* Frameworks */ = {
@@ -322,10 +358,12 @@
 				26948B5B1D39CA9600D7F8A2 /* about@3x.png in Resources */,
 				26948B511D39CA6D00D7F8A2 /* menu@2x.png in Resources */,
 				26948B5D1D39CA9D00D7F8A2 /* SplashTitle@2x.png in Resources */,
+				269862D41D47910B00F0156F /* videos@3x.png in Resources */,
 				260BB02C1D367FCA006AA7EB /* Assets.xcassets in Resources */,
 				26948B531D39CA7900D7F8A2 /* menu@3x.png in Resources */,
 				26948B591D39CA9000D7F8A2 /* about@2x.png in Resources */,
 				26948B551D39CA8200D7F8A2 /* time@2x.png in Resources */,
+				269862D31D47910B00F0156F /* videos@2x.png in Resources */,
 				260BB02A1D367FCA006AA7EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,7 +432,9 @@
 				26948B6B1D39E32600D7F8A2 /* SortViewController.swift in Sources */,
 				26998E9F1D4314E4009AE2CC /* DayArticlesTableViewCell.swift in Sources */,
 				2684B0711D44B77F00EDF8DB /* CircleImageView.swift in Sources */,
+				269862D91D4796DB00F0156F /* MeiPaiApi.swift in Sources */,
 				26980B471D3B3A5D0012C022 /* BaseModel.swift in Sources */,
+				269862D71D4791F500F0156F /* VideosViewController.swift in Sources */,
 				268F12251D3BB60700A3FCF6 /* ArticleCollectionViewCell.swift in Sources */,
 				26948B6D1D39E34E00D7F8A2 /* AboutViewController.swift in Sources */,
 				26980B4D1D3B6ECD0012C022 /* MyDateFormatTransform.swift in Sources */,
