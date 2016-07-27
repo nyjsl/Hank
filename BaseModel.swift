@@ -11,9 +11,9 @@ import Moya
 import RxSwift
 import ObjectMapper
 
-class BaseModel{
+class BaseModel<T:TargetType>{
     
-    var requestProvider: RxMoyaProvider<GankIOApi>
+    var requestProvider: RxMoyaProvider<T>
     
     var page = 1
     var offset = 20
@@ -39,7 +39,7 @@ class BaseModel{
             }
         }
         
-        self.requestProvider = RxMoyaProvider<GankIOApi>(plugins: [networkActivityPlugin,NetworkLoggerPlugin.init()])
+        self.requestProvider = RxMoyaProvider<T>(plugins: [networkActivityPlugin,NetworkLoggerPlugin.init()])
     }
     
     func parseObject<T: Mappable>(response: Response) throws -> T {

@@ -8,10 +8,26 @@
 
 import UIKit
 
+import RxSwift
 class VideosViewController: UIViewController {
+    
+    var categoriesModel: CategoryModel?
+    var disposdBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        categoriesModel = CategoryModel()
+        
+        categoriesModel?.getCategories().subscribe(onNext: { (entites) in
+            print(entites)
+            }, onError: { (error) in
+                ToastUtils.makeToast(self.view)
+            }, onCompleted: { 
+                print("onCompleted")
+            }, onDisposed: { 
+                print("onDisosed")
+        }).addDisposableTo(disposdBag)
     }
     
 }

@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 import ObjectMapper
 
-class RecentArticlesModel: BaseModel{
+class RecentArticlesModel: BaseModel<GankIOApi>{
     
     var articleEntities: [ArticleEntity]
     

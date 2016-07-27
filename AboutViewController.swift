@@ -44,7 +44,7 @@ class AboutViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if indexPath.row == 0{
-            return CGFloat(270)
+            return CGFloat(300)
         }else{
             return tableView.rowHeight
         }

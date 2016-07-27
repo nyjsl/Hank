@@ -10,7 +10,7 @@ import Foundation
 import Moya
 struct MeiPaiScheme {
     static let BaseUrl = "https://newapi.meipai.com"
-    static let Category = "channels/header_list.json?language=zh-Hans"
+    static let Category = "channels/header_list.json"
     static let VideoList = "/channels/feed_timelin.json"
     static let HotVideoList = "hot/feed_timeline.json"
 }
@@ -54,7 +54,7 @@ extension MeiPaiApi: TargetType{
     var parameters: [String: AnyObject]? {
         switch self {
         case .GetCategoryList:
-            return nil
+            return ["language": "zh-Hans"]
         case .GetHotVideoList(let page, let count):
             return [MeiPaiKey.PageKey: page,MeiPaiKey.CountKey: count]
         case .GetVideoList(let id, let type,let page, let count):

@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 import ObjectMapper
 
-class DayActiclesModel: BaseModel{
+class DayActiclesModel: BaseModel<GankIOApi>{
     
     var dayArticlesEntity: DayArticlesEntity<ArticleEntity>?
     

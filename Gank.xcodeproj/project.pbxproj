@@ -49,6 +49,9 @@
 		26998E9F1D4314E4009AE2CC /* DayArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26998E9E1D4314E4009AE2CC /* DayArticlesTableViewCell.swift */; };
 		26998EA11D432101009AE2CC /* ArticleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26998EA01D432101009AE2CC /* ArticleCollectionViewCell.xib */; };
 		269F1B061D3E6BBB00E3987F /* ArticlesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269F1B051D3E6BBB00E3987F /* ArticlesTableViewController.swift */; };
+		26A3FDE91D48E8EF002E03F1 /* CategoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A3FDE81D48E8EF002E03F1 /* CategoryEntity.swift */; };
+		26A3FDEB1D48EA3E002E03F1 /* CaterogyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A3FDEA1D48EA3E002E03F1 /* CaterogyModel.swift */; };
+		26A3FDEF1D48F6A7002E03F1 /* UrlEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A3FDEE1D48F6A7002E03F1 /* UrlEncoder.swift */; };
 		26E954CC1D3FC197003FB21D /* DayArticlesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E954CB1D3FC197003FB21D /* DayArticlesEntity.swift */; };
 		26E954CE1D3FC51D003FB21D /* DayActiclesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E954CD1D3FC51D003FB21D /* DayActiclesModel.swift */; };
 /* End PBXBuildFile section */
@@ -97,6 +100,9 @@
 		26998E9E1D4314E4009AE2CC /* DayArticlesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayArticlesTableViewCell.swift; sourceTree = "<group>"; };
 		26998EA01D432101009AE2CC /* ArticleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCollectionViewCell.xib; sourceTree = "<group>"; };
 		269F1B051D3E6BBB00E3987F /* ArticlesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewController.swift; sourceTree = "<group>"; };
+		26A3FDE81D48E8EF002E03F1 /* CategoryEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryEntity.swift; sourceTree = "<group>"; };
+		26A3FDEA1D48EA3E002E03F1 /* CaterogyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaterogyModel.swift; sourceTree = "<group>"; };
+		26A3FDEE1D48F6A7002E03F1 /* UrlEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlEncoder.swift; sourceTree = "<group>"; };
 		26E954CB1D3FC197003FB21D /* DayArticlesEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayArticlesEntity.swift; sourceTree = "<group>"; };
 		26E954CD1D3FC51D003FB21D /* DayActiclesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayActiclesModel.swift; sourceTree = "<group>"; };
 		3CF18A4F1C5E07AFC18BE243 /* Pods-Gank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gank.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gank/Pods-Gank.release.xcconfig"; sourceTree = "<group>"; };
@@ -231,6 +237,7 @@
 				26980B501D3B7DEA0012C022 /* DateUtils.swift */,
 				2684B06C1D448F8A00EDF8DB /* RoundCornerUtils.swift */,
 				268A0EF11D4649C600EB5FDA /* ToastUtils.swift */,
+				26A3FDEE1D48F6A7002E03F1 /* UrlEncoder.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -278,6 +285,8 @@
 			isa = PBXGroup;
 			children = (
 				269862D81D4796DB00F0156F /* MeiPaiApi.swift */,
+				26A3FDE81D48E8EF002E03F1 /* CategoryEntity.swift */,
+				26A3FDEA1D48EA3E002E03F1 /* CaterogyModel.swift */,
 			);
 			name = meipai;
 			sourceTree = "<group>";
@@ -425,8 +434,10 @@
 			files = (
 				26948B621D39D3B400D7F8A2 /* RecentViewController.swift in Sources */,
 				26980B451D3B2D8A0012C022 /* GankIOApi.swift in Sources */,
+				26A3FDEB1D48EA3E002E03F1 /* CaterogyModel.swift in Sources */,
 				269F1B061D3E6BBB00E3987F /* ArticlesTableViewController.swift in Sources */,
 				26948B661D39D68100D7F8A2 /* MainTabViewController.swift in Sources */,
+				26A3FDE91D48E8EF002E03F1 /* CategoryEntity.swift in Sources */,
 				2684B0691D44884D00EDF8DB /* AboutNoImgCell.swift in Sources */,
 				2684B0651D445BA300EDF8DB /* WebViewController.swift in Sources */,
 				26948B6B1D39E32600D7F8A2 /* SortViewController.swift in Sources */,
@@ -451,6 +462,7 @@
 				26E954CC1D3FC197003FB21D /* DayArticlesEntity.swift in Sources */,
 				26E954CE1D3FC51D003FB21D /* DayActiclesModel.swift in Sources */,
 				2684B06F1D44AEAC00EDF8DB /* CardView.swift in Sources */,
+				26A3FDEF1D48F6A7002E03F1 /* UrlEncoder.swift in Sources */,
 				26948B6F1D3A1C9B00D7F8A2 /* ThemeUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
