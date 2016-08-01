@@ -36,6 +36,16 @@ class RecentViewController: UIViewController ,UICollectionViewDelegate,UICollect
         
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        AppDelegate.getNavigationController().followScrollView(self.collectionView, delay: 50.0)
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidAppear(animated)
+        AppDelegate.getNavigationController().stopFollowingScrollView()
+    }
+
     
     func setUpCollectionView(){
         

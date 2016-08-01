@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (3.4.1)
+  - AMScrollingNavbar (2.1.2)
   - CHTCollectionViewWaterfallLayout (0.9.4):
     - CHTCollectionViewWaterfallLayout/ObjC (= 0.9.4)
   - CHTCollectionViewWaterfallLayout/ObjC (0.9.4)
@@ -36,6 +37,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 3.4)
+  - AMScrollingNavbar
   - CHTCollectionViewWaterfallLayout (~> 0.9.4)
   - IDMPhotoBrowser
   - MJRefresh
@@ -51,6 +53,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  AMScrollingNavbar: 403b8651052459b433941bd4bc4215a64b992e52
   CHTCollectionViewWaterfallLayout: db74be9135826d285f45ff163fd090e57c99fc50
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   IDMPhotoBrowser: b574fe3229754e701f32df271afbc4ac7e4e1997
@@ -66,6 +69,6 @@ SPEC CHECKSUMS:
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   Toast-Swift: 25c3d98db42dc70d9a77b5006ee000e0becb458e
 
-PODFILE CHECKSUM: 60020ee1a1a5594ede3198fbe314663a5e69a50f
+PODFILE CHECKSUM: c1fda25ea0050718b0aa8526d05a4cea23e40be6
 
 COCOAPODS: 1.0.1

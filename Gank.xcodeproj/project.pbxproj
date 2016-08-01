@@ -48,6 +48,7 @@
 		269862D91D4796DB00F0156F /* MeiPaiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269862D81D4796DB00F0156F /* MeiPaiApi.swift */; };
 		26998E9F1D4314E4009AE2CC /* DayArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26998E9E1D4314E4009AE2CC /* DayArticlesTableViewCell.swift */; };
 		26998EA11D432101009AE2CC /* ArticleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26998EA01D432101009AE2CC /* ArticleCollectionViewCell.xib */; };
+		269EB2791D4F81DC00C9D868 /* VideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269EB2781D4F81DC00C9D868 /* VideoListViewController.swift */; };
 		269F1B061D3E6BBB00E3987F /* ArticlesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269F1B051D3E6BBB00E3987F /* ArticlesTableViewController.swift */; };
 		26A3FDE91D48E8EF002E03F1 /* CategoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A3FDE81D48E8EF002E03F1 /* CategoryEntity.swift */; };
 		26A3FDEB1D48EA3E002E03F1 /* CaterogyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A3FDEA1D48EA3E002E03F1 /* CaterogyModel.swift */; };
@@ -99,6 +100,7 @@
 		269862D81D4796DB00F0156F /* MeiPaiApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeiPaiApi.swift; sourceTree = "<group>"; };
 		26998E9E1D4314E4009AE2CC /* DayArticlesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayArticlesTableViewCell.swift; sourceTree = "<group>"; };
 		26998EA01D432101009AE2CC /* ArticleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCollectionViewCell.xib; sourceTree = "<group>"; };
+		269EB2781D4F81DC00C9D868 /* VideoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoListViewController.swift; sourceTree = "<group>"; };
 		269F1B051D3E6BBB00E3987F /* ArticlesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewController.swift; sourceTree = "<group>"; };
 		26A3FDE81D48E8EF002E03F1 /* CategoryEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryEntity.swift; sourceTree = "<group>"; };
 		26A3FDEA1D48EA3E002E03F1 /* CaterogyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaterogyModel.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				269862D61D4791F500F0156F /* VideosViewController.swift */,
+				269EB2781D4F81DC00C9D868 /* VideoListViewController.swift */,
 			);
 			name = videos;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				TargetAttributes = {
 					260BB0201D367FCA006AA7EB = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = FHZPZ8NR76;
 					};
 				};
 			};
@@ -453,6 +457,7 @@
 				26980B511D3B7DEA0012C022 /* DateUtils.swift in Sources */,
 				26980B4F1D3B72E90012C022 /* RecentArticlesModel.swift in Sources */,
 				26980B491D3B693E0012C022 /* BaseEntity.swift in Sources */,
+				269EB2791D4F81DC00C9D868 /* VideoListViewController.swift in Sources */,
 				26980B4B1D3B6C470012C022 /* ArticleEntity.swift in Sources */,
 				268A0EF21D4649C600EB5FDA /* ToastUtils.swift in Sources */,
 				26948B691D39DA9E00D7F8A2 /* ControllerUtils.swift in Sources */,
@@ -579,6 +584,7 @@
 			baseConfigurationReference = BBDB191163C3D64EB9416028 /* Pods-Gank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Gank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.wx.Gank;
@@ -591,6 +597,7 @@
 			baseConfigurationReference = 3CF18A4F1C5E07AFC18BE243 /* Pods-Gank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Gank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.wx.Gank;

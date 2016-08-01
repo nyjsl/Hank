@@ -55,6 +55,7 @@ class WebViewController: UIViewController ,UIWebViewDelegate,NJKWebViewProgressD
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.addSubview(webViewProgressView!)
+       
     }
     
     override func viewWillDisappear(animated: Bool) {

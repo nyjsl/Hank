@@ -25,7 +25,9 @@ class ControllerUtils{
         static let VCNameVideos = "Videos"
         
         static let VCNameArticlesTableView = "Articles"
-        static  let VCNameWebView = "WebView"
+        static let VCNameWebView = "WebView"
+        static let VCNameViewoList = "VideoList"
+        
         
     }
     

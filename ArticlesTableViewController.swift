@@ -30,6 +30,17 @@ class ArticlesTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        AppDelegate.getNavigationController().followScrollView(self.tableView, delay: 50.0)
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidAppear(animated)
+         AppDelegate.getNavigationController().stopFollowingScrollView()
+    }
+   
+    
     func setUpTableView(){
         tableView.estimatedRowHeight = tableView.rowHeight
         tableView.rowHeight = UITableViewAutomaticDimension

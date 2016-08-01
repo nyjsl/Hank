@@ -8,6 +8,8 @@
 
 import UIKit
 
+import AMScrollingNavbar
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -53,15 +55,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
         
     }
-    
+    /*
+     ScrollingNavigationController
+    */
     private func setUpRootViewController(rootViewController: UIViewController){
-        let navigationController = UINavigationController.init(rootViewController: rootViewController)
+        let navigationController = ScrollingNavigationController.init(rootViewController: rootViewController)
         self.window?.rootViewController = navigationController
     }
-
-    static func getNavigationController() -> UINavigationController{
+    /*
+     ScrollingNavigationController
+     */
+    static func getNavigationController() -> ScrollingNavigationController{
         let appDeleget = UIApplication.sharedApplication().delegate as! AppDelegate
-        let navigationController = appDeleget.window?.rootViewController as! UINavigationController
+        let navigationController = appDeleget.window?.rootViewController as! ScrollingNavigationController
         return navigationController
     }
 

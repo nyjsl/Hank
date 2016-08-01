@@ -33,6 +33,17 @@ class AboutViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        AppDelegate.getNavigationController().followScrollView(self.tableView, delay: 50.0)
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidAppear(animated)
+        AppDelegate.getNavigationController().stopFollowingScrollView()
+    }
+
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         let frame = tableView.frame;

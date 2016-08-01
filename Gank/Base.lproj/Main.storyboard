@@ -37,10 +37,22 @@
                     <view key="view" contentMode="scaleToFill" id="1gi-92-uRK">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="FOe-iw-YVe">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FOe-iw-YVe" firstAttribute="centerX" secondItem="1gi-92-uRK" secondAttribute="centerX" id="96n-ds-MbH"/>
+                            <constraint firstItem="FOe-iw-YVe" firstAttribute="centerY" secondItem="1gi-92-uRK" secondAttribute="centerY" id="Vk2-ho-gti"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="视频" image="videos.png" id="a5z-yG-MM0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="FOe-iw-YVe" id="fN8-QD-zvE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="etS-QC-jF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -275,6 +287,24 @@
             </objects>
             <point key="canvasLocation" x="30" y="50"/>
         </scene>
+        <!--Video List View Controller-->
+        <scene sceneID="agD-3Y-ipx">
+            <objects>
+                <viewController storyboardIdentifier="VideoList" id="vbn-Yi-M2M" customClass="VideoListViewController" customModule="Gank" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a48-Ma-a1T"/>
+                        <viewControllerLayoutGuide type="bottom" id="9dN-lW-a3E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A5e-bm-mh8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OU1-8A-dDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1522" y="-125"/>
+        </scene>
         <!--最新-->
         <scene sceneID="5JA-k7-QR8">
             <objects>
@@ -356,7 +386,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" misplaced="YES" text="desc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="win-cy-6hG">
                                             <rect key="frame" x="20" y="0.0" width="580" height="31"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="746-Mz-hGx">
@@ -456,8 +486,8 @@
                     <connections>
                         <segue destination="0Zx-hE-Bwf" kind="relationship" relationship="viewControllers" id="jna-Zu-JJP"/>
                         <segue destination="W9O-1W-H1S" kind="relationship" relationship="viewControllers" id="gp3-mx-r23"/>
-                        <segue destination="wlj-sx-MgK" kind="relationship" relationship="viewControllers" id="ct8-7U-QMn"/>
                         <segue destination="ATF-2U-I0a" kind="relationship" relationship="viewControllers" id="Fhb-BR-5Y5"/>
+                        <segue destination="wlj-sx-MgK" kind="relationship" relationship="viewControllers" id="dA4-GN-LnI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nt3-rm-Niq" userLabel="First Responder" sceneMemberID="firstResponder"/>
